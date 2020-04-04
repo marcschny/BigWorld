@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>IVISPro_FS20 by David Kern, Marc Schnydrig</title>
+    <title>IVISPro</title>
+	<script src="lib/d3.js"></script>
+	<script src="lib/topojson.js"></script> 
+	<script src="lib/datamaps.world.js"></script> 
 </head>
 <body>
+<h1>IVISPro_FS20 by David Kern, Marc Schnydrig</h1>
 
+<div id="container" style="position: relative; width: 800px; height: 400px; border: 1px solid black;"></div>
+<script>
+		var map = new Datamap({
+		element: document.getElementById('container'),
+		fills: {
+			defaultFill: 'rgba(200,200,200,0.9)' // Any hex, color name or rgb/rgba value
+		}
+	});
+</script>
+	
 </body>
 </html>
