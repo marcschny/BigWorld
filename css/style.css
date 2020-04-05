@@ -1,0 +1,38 @@
+body {
+    overflow: hidden;
+}
+#zoomIn-button {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    
+}
+#zoomIn-button:hover {
+    background-color: blue;
+}
+
+#zoomOut-button {
+    margin-right: 10px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+
+}
+
+#zoomOut-button:hover {
+    background-color: blue;
+}
+
+#btn-holder {
+    position: absolute;
+    right:    0;
+    bottom:   30px;
+    justify-content: flex-end;
+    display: flex;
+}

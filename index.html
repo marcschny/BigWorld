@@ -3,6 +3,7 @@
 <head>
     <title>IVISPro</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF8">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="lib/d3.js"></script>
 	<script src="lib/topojson.js"></script> 
 	<script src="lib/datamaps.world.js"></script> 
@@ -10,7 +11,13 @@
 <body>
 <h1>IVISPro_FS20 by David Kern, Marc Schnydrig</h1>
 
-<div id="container" style="position: relative; width: 800px; height: 400px; border: 1px solid black;"></div>
+<div id="container" style="position: relative; width: 95vw; height: 90vh; border: none; padding: 0;">
+	<div id="btn-holder">
+		<button id="zoomOut-button">-</button>
+		<button id="zoomIn-button">+</button>
+	</div>
+	
+</div>
 <script>
 		var map = new Datamap({
 		element: document.getElementById('container'),
@@ -19,6 +26,7 @@
 		}
 	});
 </script>
+
 	
 </body>
 </html>
