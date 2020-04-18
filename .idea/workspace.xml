@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc3ed9d1-1f95-407c-bf36-c5aebad6eae1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/obese-worldwide-and-switzerland-final.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/obese_worldwide_and_switzerland-v2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/detailedView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ivispro_fs20.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ivispro_fs20.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/d3.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/d3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/script.js" afterDir="false" />
-    </list>
+    <list default="true" id="fc3ed9d1-1f95-407c-bf36-c5aebad6eae1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +71,7 @@
       <workItem from="1587138681663" duration="2873000" />
       <workItem from="1587141932114" duration="32000" />
       <workItem from="1587141993912" duration="1772000" />
-      <workItem from="1587217152683" duration="11881000" />
+      <workItem from="1587217152683" duration="12123000" />
     </task>
     <task id="LOCAL-00001" summary="nothing new">
       <created>1587138892196</created>
@@ -91,7 +80,28 @@
       <option name="project" value="LOCAL" />
       <updated>1587138892196</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="detailed view, add column two index.html, example pie chart">
+      <created>1587232249237</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587232249237</updated>
+    </task>
+    <task id="LOCAL-00003" summary="detailed view, add column two index.html, example pie chart, read data from csv">
+      <created>1587232276402</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587232276402</updated>
+    </task>
+    <task id="LOCAL-00004" summary="detailed view, add column two index.html, example pie chart, read data from csv">
+      <created>1587232289442</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587232289442</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,7 +109,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nothing new" />
-    <option name="LAST_COMMIT_MESSAGE" value="nothing new" />
+    <MESSAGE value="detailed view, add column two index.html, example pie chart" />
+    <MESSAGE value="detailed view, add column two index.html, example pie chart, read data from csv" />
+    <option name="LAST_COMMIT_MESSAGE" value="detailed view, add column two index.html, example pie chart, read data from csv" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587220532761">
@@ -110,10 +122,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1587228849318" />
-    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1587232276272">
+    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1587232289315">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1587232276272" />
+    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1587232289315" />
     <state x="608" y="324" width="443" height="252" key="MultipleFileMergeDialog" timestamp="1587138904967">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
