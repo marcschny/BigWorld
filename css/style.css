@@ -30,9 +30,74 @@ body {
 }
 
 #btn-holder {
-    position: absolute;
+    position: relative;
     right:    0;
+    top: 82vh;
     bottom:   30px;
     justify-content: flex-end;
     display: flex;
+}
+
+/*Detail window scrollable*/
+#scrollable {
+    height: 88vh;
+    width: 100%;
+    position: center;
+    overflow: hidden;
+}
+/* only for testing */
+#scrollable .content {
+    height: 83.8vh;
+    width: 100%;
+    margin: 2px 0;
+    border-radius: 10px;
+    background-color: slategray;
+    color: rebeccapurple;
+}
+#down {
+    margin-left: 40%;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 14px;
+    height: 30px;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+#up {
+    margin-left: 40%;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 14px;
+    height: 30px;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+/*Layout with two column*/
+.column {
+    float: left;
+    height: 88vh;
+}
+
+.left {
+    width: 68%;
+}
+
+.right {
+    width: 32%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row {
+    padding: 0;
+    margin: 0;
 }
