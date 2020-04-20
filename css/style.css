@@ -47,35 +47,28 @@ body {
 }
 /* only for testing */
 #scrollable .content {
-    height: 83.8vh;
+    position: relative;
+    height: calc(88vh - 22px);
     width: 100%;
-    margin: 2px 0;
-    border-radius: 10px;
-    background-color: slategray;
-    color: rebeccapurple;
+    background-color: #555;
+    color: white;
+    padding-top: 22px;
 }
-#down {
-    margin-left: 40%;
+.scroll-button{
+    position: absolute;
+    right: 0; bottom: 0px;
     border: none;
-    border-radius: 20px;
-    background-color: black;
+    padding: 12px 0;
+    width: 100%;
+    background-color: #333;
     font-size: 14px;
-    height: 30px;
-    width: 100px;
+    letter-spacing: 1px;
     color: white;
     cursor: pointer;
 }
-
-#up {
-    margin-left: 40%;
-    border: none;
-    border-radius: 20px;
-    background-color: black;
-    font-size: 14px;
-    height: 30px;
-    width: 100px;
-    color: white;
-    cursor: pointer;
+#testpie{
+    position: relative;
+    margin-left: 26%;
 }
 
 /*Layout with two column*/
@@ -100,4 +93,114 @@ body {
 .row {
     padding: 0;
     margin: 0;
+}
+
+/* right column and content */
+.country-title{
+    width: 100%;
+    font-family: Candara;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+
+.filter-section{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 18px;
+}
+.filter-section:nth-child(3){
+    margin-bottom: 30px;
+}
+
+.center{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+}
+
+.filter-gender-button{
+    height: 44px;
+    width: 44px;
+    background-color: #777;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+.filter-gender-button:last-child{
+    margin: 0;
+}
+
+.filter-gender-icon{
+    width: 100%;
+}
+
+.dropdown{
+    width: 200px;
+    height: 30px;
+    font-size: 17px;
+}
+
+select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    padding-left: 10px;
+    background-color: #777;
+    color: white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+select::-ms-expand {
+    display: none;
+}
+select option{
+    color: white;
+    cursor: pointer;
+}
+select:focus::-ms-value{
+    background-color: transparent;
+}
+.select-wrapper{
+    position: relative;
+}
+.select-wrapper::before{
+    content: "\25bc";
+    font-size: 12px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #fff;
+    pointer-events: none;
+}
+select option:hover{
+    background-color: white;
+}
+
+.statistic-title{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Candara;
+    margin: 20px 0 16px 0;
+    position: relative;
+}
+
+.statistic-section{
+    width: 100%;
+    min-height: 20px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
 }
