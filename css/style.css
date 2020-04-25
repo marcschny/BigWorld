@@ -1,5 +1,7 @@
-body {
+html, body {
     overflow: hidden;
+    padding: 0;
+    margin: 0;
 }
 .zoom-button {
     width: 40px;
@@ -40,15 +42,14 @@ body {
 
 /*Detail window scrollable*/
 #scrollable {
-    height: 88vh;
     width: 100%;
+    height: 100%;
     position: center;
     overflow: hidden;
 }
 /* only for testing */
 #scrollable .content {
     position: relative;
-    height: calc(88vh - 22px);
     width: 100%;
     background-color: #555;
     color: white;
@@ -71,18 +72,18 @@ body {
     margin-left: 26%;
 }
 
+
 /*Layout with two column*/
 .column {
     float: left;
-    height: 88vh;
 }
 
 .left {
-    width: 68%;
+    width: 73%;
 }
 
 .right {
-    width: 32%;
+    width: 27%;
 }
 
 .row:after {
@@ -93,6 +94,14 @@ body {
 .row {
     padding: 0;
     margin: 0;
+}
+
+#map{
+    position: center;
+    width: 100%;
+    height: 100vh;
+    border: none;
+    padding: 0;
 }
 
 /* right column and content */

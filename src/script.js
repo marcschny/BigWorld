@@ -230,9 +230,9 @@ Zoom.prototype._getNextScale = function(direction) {
 
 // create Datamap
 function Datamap() {
-    this.$container = $("#container");
+    this.$container = $("#map");
     this.instance = new Datamaps({
-        element: document.getElementById('container'),
+        element: document.getElementById('map'),
         fills: {
             defaultFill: 'rgba(200,200,200,0.9)' // Any hex, color name or rgb/rgba value
         },
@@ -305,3 +305,16 @@ arcs.append("svg:text")                                     //add a label to eac
     })
     .attr("text-anchor", "middle")                          //center the text on it's origin
     .text(function(d, i) { return data[i].label; });        //get the label from our ori
+
+
+
+/* SCALING */
+
+/* scaling variables */
+var wHeight = $(window).height();
+var wWidth = $(window).width();
+
+var scrollButtonHeight = $(".scroll-button").height();
+
+$(".column").css("height", wHeight);
+$(".content").css("height", wHeight-scrollButtonHeight);
