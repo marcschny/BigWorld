@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,7 @@
       <workItem from="1587141993912" duration="1772000" />
       <workItem from="1587217152683" duration="12123000" />
       <workItem from="1587402319698" duration="5775000" />
-      <workItem from="1587823426152" duration="1541000" />
+      <workItem from="1587823426152" duration="2568000" />
     </task>
     <task id="LOCAL-00001" summary="nothing new">
       <created>1587138892196</created>
@@ -123,6 +122,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="detailed view, add column two index.html, example pie chart, read data from csv" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="362" y="75" key="#Inspections" timestamp="1587825863362">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="362" y="75" key="#Inspections/0.0.1536.824/994.-1080.1920.1040@0.0.1536.824" timestamp="1587825863362" />
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587220532761">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

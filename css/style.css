@@ -8,36 +8,29 @@ html, body {
     height: 40px;
     border-radius: 50%;
     border: none;
-    background-color: black;
+    background-color: #2A2A2A;
     font-size: 16px;
     color: white;
     cursor: pointer;
 }
 
-#zoomIn-button:hover {
-    background-color: blue;
+#zoomIn-button:hover, #zoomOut-button:hover {
+    background-color: orange;
 }
 
 #zoomOut-button {
-    margin-right: 10px;
-}
-
-#zoomOut-button:hover {
-    background-color: blue;
+    margin-right: 8px;
 }
 
 #zoom-info {
     display: inline-block;
-    padding: 10px;
+    padding: 6px;
+    font-family: Arial;
 }
 
 #btn-holder {
-    position: relative;
-    right:    0;
-    top: 82vh;
-    bottom:   30px;
-    justify-content: flex-end;
-    display: flex;
+    position: absolute;
+    left: 12px; bottom: 20px;
 }
 
 /*Detail window scrollable*/
