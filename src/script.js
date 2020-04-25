@@ -253,7 +253,19 @@ new Datamap();
 /* END WORLD MAP */
 
 
+/* COUNT Number of countries */
+d3.csv("./data/obese-worldwide-and-switzerland-final.csv",function(data) {
 
+    // count distinct number of countries
+    var countries = [];
+    for(var i=0; i<data.length;i++){
+        if(countries.indexOf(data[i]["Country"]) === -1){
+            countries.push(data[i]["Country"]);
+        }
+    }
+    console.log("Anzahl Länder: "+countries.length);
+    $("#countCountries").html(countries.length);
+});
 
 
 
