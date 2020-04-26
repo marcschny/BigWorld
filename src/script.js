@@ -233,22 +233,31 @@ function Datamap() {
     this.$container = $("#map");
     this.instance = new Datamaps({
         element: document.getElementById('map'),
-        fills: {
-            defaultFill: 'rgba(200,200,200,0.9)' // Any hex, color name or rgb/rgba value
-        },
         projection: 'mercator',
+        fills: {
+            defaultFill: 'rgba(200,200,200,0.9)', // Any hex, color name or rgb/rgba value
+        },
+        geographyConfig: {
+            selectedFill: '#72b285',
+            highlightBorderColor: '#72b285',
+        },
+
         done: this._handleMapReady.bind(this)
     });
 }
+
 
 Datamap.prototype._handleMapReady = function(datamap) {
     this.zoom = new Zoom({
         $container: this.$container,
         datamap: datamap
     });
-}
+};
 
 new Datamap();
+
+
+
 
 /* END WORLD MAP */
 
@@ -265,6 +274,7 @@ d3.csv("./data/obese-worldwide-and-switzerland-final.csv",function(data) {
     }
     console.log("Anzahl Länder: "+countries.length);
     $("#countCountries").html(countries.length);
+
 });
 
 
