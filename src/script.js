@@ -36,6 +36,7 @@ d3.csv("./data/obese-worldwide-and-switzerland-final.csv")
         };
     });
 
+
 /* WORLD MAP */
 
 function Zoom(args) {
@@ -272,13 +273,15 @@ d3.csv("./data/obese-worldwide-and-switzerland-final.csv",function(data) {
             countries.push(data[i]["Country"]);
         }
     }
-    console.log("Anzahl Länder: "+countries.length);
+    console.log("Number of countries: "+countries.length);
     $("#countCountries").html(countries.length);
 
 });
 
-
-
+// what to do when a country is on clicked
+function clickedOnCountry(country){
+    console.log(country);
+}
 
 
 
