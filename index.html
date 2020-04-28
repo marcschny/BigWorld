@@ -12,7 +12,7 @@
 <body>
 <div class="row">
     <div class="column left">
-        <div id="map"></div>
+        <div id="map" onclick="selectedCountry()"></div>
         <div id="btn-holder">
             <button id="zoomOut-button" class="zoom-button" data-zoom="out">-</button>
             <button id="zoomIn-button" class="zoom-button" data-zoom="in">+</button>
@@ -23,7 +23,7 @@
         <div id="scrollable">
             <div>
                 <div id="detailWindow" class='content'>
-                    <div class="country-title">Ganze Welt / Land</div>
+                    <div class="country-title"><p>Worldwide</p></div>
                     <div class="filter-section">
                         <div class="center">
                             <button class="filter-gender-button">

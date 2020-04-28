@@ -66,6 +66,9 @@ html, body {
     margin-left: 26%;
 }
 
+#selectedCountry {
+    position: center;
+}
 
 /*Layout with two column*/
 .column {
@@ -102,11 +105,11 @@ html, body {
 .country-title{
     width: 100%;
     font-family: Candara;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     color: white;
-    padding: 15px 0;
+    padding: 5px 0;
     margin-bottom: 10px;
 }
 
