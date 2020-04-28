@@ -255,9 +255,12 @@ Datamap.prototype._handleMapReady = function(datamap) {
     });
 };
 
-new Datamap();
+const map = new Datamap();
 
-
+//country is clicked
+function selectedCountry() {
+    return d3.selectAll("#selectedCountry").text(map.instance.options.geographyConfig.clickedCountry)
+}
 
 
 /* END WORLD MAP */
@@ -356,10 +359,7 @@ d3.csv("./data/obese-worldwide-and-switzerland-final.csv",function(data) {
 
 });
 
-// what to do when a country is on clicked
-function clickedOnCountry(country){
-    console.log(country);
-}
+
 
 // get top 3 obese countries
 function getTopThreeObese(data){
