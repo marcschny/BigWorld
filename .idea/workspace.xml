@@ -44,7 +44,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -134,11 +134,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1587228849318" />
-    <state x="286" y="23" key="CommitChangelistDialog2" timestamp="1587922273792">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1587232289315">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="286" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1587232289315" />
-    <state x="286" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1587922273792" />
     <state x="608" y="324" width="443" height="252" key="MultipleFileMergeDialog" timestamp="1587138904967">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

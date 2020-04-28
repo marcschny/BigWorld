@@ -12,7 +12,7 @@
 <body>
 <div class="row">
     <div class="column left">
-        <div id="map"></div>
+        <div id="map" onclick="selectedCountry()"></div>
         <div id="btn-holder">
             <button id="zoomOut-button" class="zoom-button" data-zoom="out">-</button>
             <button id="zoomIn-button" class="zoom-button" data-zoom="in">+</button>
@@ -23,7 +23,7 @@
         <div id="scrollable">
             <div>
                 <div id="detailWindow" class='content'>
-                    <div class="country-title">Ganze Welt</div>
+                    <div class="country-title" id="selectedCountry">Worldwide</div>
                     <div class="filter-section">
                         <div class="center">
                             <button class="filter-gender-button">
@@ -50,7 +50,8 @@
                     <div class="statistic-title">Anzahl Länder mit Daten</div>
                     <div class="statistic-section" id="countCountries"><i>hier kommen Daten</i></div>
                     <div class="statistic-title">Statistik 1</div>
-                    <div class="statistic-section"><i>hier kommen Daten</i></div>
+                    <div id="testchart"></div>
+                    <!--<div class="statistic-section"><i>hier kommen Daten</i></div>-->
 					<!--<div id="testpie"></div>-->
                     <button id="down" class="scroll-button">Mehr Anzeigen</button>
                 </div>
@@ -64,7 +65,9 @@
             </div>
         </div>
     </div>
-    <script src="src/script.js"></script>
+    <script src="src/script.js">
+
+    </script>
 
 </body>
 </html>

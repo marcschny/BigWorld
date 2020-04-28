@@ -2,6 +2,7 @@ html, body {
     overflow: hidden;
     padding: 0;
     margin: 0;
+    background-color: lightslategray;
 }
 .zoom-button {
     width: 40px;
@@ -65,6 +66,9 @@ html, body {
     margin-left: 26%;
 }
 
+#selectedCountry {
+    position: center;
+}
 
 /*Layout with two column*/
 .column {
@@ -101,11 +105,11 @@ html, body {
 .country-title{
     width: 100%;
     font-family: Candara;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     color: white;
-    padding: 15px 0;
+    padding: 8px 0;
     margin-bottom: 10px;
 }
 
@@ -205,4 +209,22 @@ select option:hover{
     margin-bottom: 10px;
     color: white;
     text-align: center;
+}
+
+
+/* TESTCHART */
+.bar{
+    fill: steelblue;
+}
+.axis {
+    font: 11px sans-serif;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: white;
+    shape-rendering: crispEdges;
+}
+svg text {
+    fill: white;
 }
