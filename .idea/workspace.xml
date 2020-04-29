@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc3ed9d1-1f95-407c-bf36-c5aebad6eae1" name="Default Changelist" comment="" />
+    <list default="true" id="fc3ed9d1-1f95-407c-bf36-c5aebad6eae1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/charts.worldwide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/datamaps.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testPieChart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/script.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +30,13 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,6 +92,7 @@
       <workItem from="1587217152683" duration="12123000" />
       <workItem from="1587402319698" duration="5775000" />
       <workItem from="1587823426152" duration="10102000" />
+      <workItem from="1588162896948" duration="2327000" />
     </task>
     <task id="LOCAL-00001" summary="nothing new">
       <created>1587138892196</created>
@@ -104,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587232289442</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="testchart and country binding">
+      <created>1588101487615</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588101487615</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +140,8 @@
     <MESSAGE value="nothing new" />
     <MESSAGE value="detailed view, add column two index.html, example pie chart" />
     <MESSAGE value="detailed view, add column two index.html, example pie chart, read data from csv" />
-    <option name="LAST_COMMIT_MESSAGE" value="detailed view, add column two index.html, example pie chart, read data from csv" />
+    <MESSAGE value="testchart and country binding" />
+    <option name="LAST_COMMIT_MESSAGE" value="testchart and country binding" />
   </component>
   <component name="WindowStateProjectService">
     <state x="362" y="75" key="#Inspections" timestamp="1587825863362">
@@ -130,10 +156,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1587228849318" />
-    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1587232289315">
+    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1588101487488">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1587232289315" />
+    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1588101487488" />
     <state x="608" y="324" width="443" height="252" key="MultipleFileMergeDialog" timestamp="1587138904967">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -142,6 +168,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1587223897494" />
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1588101493732">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1588101493732" />
     <state x="479" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1587823428740">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

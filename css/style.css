@@ -16,7 +16,7 @@ html, body {
 }
 
 #zoomIn-button:hover, #zoomOut-button:hover {
-    background-color: orange;
+    background-color: #555555;
 }
 
 #zoomOut-button {
