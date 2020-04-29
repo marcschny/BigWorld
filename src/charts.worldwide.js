@@ -34,7 +34,7 @@ d3v3.csv("./data/obese-worldwide-and-switzerland-final.csv",function(data) {
     var countries = [];
     for(var i=0; i<data.length;i++){
         //store all countries in array UNIQUE
-        if(countries.indexOf(data[i]["Country"]) === -1){
+        if(countries.indexOf(data[i]["Country"]) === -1 && data[i]["Value"] != ""){
             countries.push(data[i]["Country"]);
         }
         //store data by gender
