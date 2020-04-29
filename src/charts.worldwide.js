@@ -119,8 +119,53 @@ function getCountryData(country){
         //only store value from latest year
         countryData.splice(1);
     });
+    //log recent data from selected country
     console.log(countryData);
-    //showPieChart(countryData);
+    //pass this data to generate a pie chart
+    showPieChart(countryData);
 }
 
+function showPieChart(data){
+
+    /* still need the value from data to generate the pie chart */
+    console.log(data[0].value);
+
+    const chartDiv = document.getElementById("percOfCountry");
+    console.log(chartDiv.childNodes.length);
+
+    /*check if there is already a chart in the div
+    if(chartDiv.childNodes.length === 0){
+        /* TEST Pie Chart /
+        var margin = {top: 40, right: 40, bottom: 40, left: 40},
+            width = document.getElementById("scrollable").clientWidth - margin.left - margin.right,
+            height = 400 - margin.top - margin.bottom,
+            radius = Math.min(width, height) / 2,
+            color = d3.scaleOrdinal(["#4daf4a"]);
+
+        // Generate the pie
+        var pie = d3.pie();
+
+        // Generate the arcs
+        var arc = d3.arc()
+            .innerRadius(0)
+            .outerRadius(radius);
+
+        //Generate groups
+        var arcs = g.selectAll("arc")
+            .data(pie(mydata))
+            .enter()
+            .append("g")
+            .attr("class", "arc")
+
+        //Draw arc paths
+        arcs.append("path")
+            .attr("fill", function(d, i) {
+                return color(i);
+            })
+            .attr("d", arc);
+
+
+    }*/
+
+}
 
