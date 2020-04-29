@@ -1,7 +1,7 @@
 /* load data from csv file */
 
 
-var data = d3.csv("data/obese-worldwide-and-switzerland-final.csv", function (d) {
+var allData = d3.csv("data/obese-worldwide-and-switzerland-final.csv", function (d) {
     return {
         country: d.Country,
         year: +d.Year,
@@ -16,10 +16,10 @@ var data = d3.csv("data/obese-worldwide-and-switzerland-final.csv", function (d)
 });
 
 //zugriff auf die daten
-data.then(function (data) {
-    console.log(data[3433].country);
+allData.then(function (data) {
+    //console.log(data[3433].country);
     //getAllRows
-    console.log(data.length)
+    //console.log(data.length)
 });
 
 

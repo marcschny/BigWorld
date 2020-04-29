@@ -99,4 +99,28 @@ function getTopThreeObese(data){
 }
 
 
+function getCountryData(country){
+    console.log("Country '"+ country +"' clicked");
+    var countryData = [];
+
+    allData.then(function (data) {
+        data.forEach(function(d){
+            //get specific country data
+            if(d.country === country && d.gender === "total" && d.value != ""
+                && (d.bmi === "overweight" || d.bmi === "obese")) {
+                countryData.push(d);
+            }
+        });
+
+        //sort array desc
+        countryData.sort(function(a,b){
+            return b.year - a.year;
+        });
+        //only store value from latest year
+        countryData.splice(1);
+    });
+    console.log(countryData);
+    //showPieChart(countryData);
+}
+
 
