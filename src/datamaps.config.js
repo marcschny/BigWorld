@@ -20,13 +20,13 @@ Zoom.prototype.init = function () {
 
     // disable click on drag end
     subunits.call(
-        d3.behavior.drag().on("dragend", function () {
-            d3.event.sourceEvent.stopPropagation();
+        d3v3.behavior.drag().on("dragend", function () {
+            d3v3.event.sourceEvent.stopPropagation();
         })
     );
 
     this.scale.set = this._getScalesArray();
-    this.d3Zoom = d3.behavior.zoom().scaleExtent([1, this.scale.max]);
+    this.d3v3Zoom = d3v3.behavior.zoom().scaleExtent([1, this.scale.max]);
 
     this._displayPercentage(1);
     this.listen();
@@ -36,7 +36,7 @@ Zoom.prototype.listen = function () {
     this.$buttons.off("click").on("click", this._handleClick.bind(this));
 
     this.datamap.svg
-        .call(this.d3Zoom.on("zoom", this._handleScroll.bind(this)))
+        .call(this.d3v3Zoom.on("zoom", this._handleScroll.bind(this)))
         .on("dblclick.zoom", null); // disable zoom on double-click
 };
 
@@ -46,8 +46,8 @@ Zoom.prototype.listen = function () {
 };*/
 
 Zoom.prototype._handleScroll = function () {
-    var translate = d3.event.translate,
-        scale = d3.event.scale,
+    var translate = d3v3.event.translate,
+        scale = d3v3.event.scale,
         limited = this._bound(translate, scale);
 
     this.scrolled = true;
@@ -63,11 +63,11 @@ Zoom.prototype._handleClick = function (event) {
 
 Zoom.prototype._shift = function (direction) {
     var center = [this.$container.width() / 2, this.$container.height() / 2],
-        translate = this.d3Zoom.translate(), translate0 = [], l = [],
+        translate = this.d3v3Zoom.translate(), translate0 = [], l = [],
         view = {
             x: translate[0],
             y: translate[1],
-            k: this.d3Zoom.scale()
+            k: this.d3v3Zoom.scale()
         }, bounded;
 
     translate0 = [
@@ -107,7 +107,7 @@ Zoom.prototype._bound = function (translate, scale) {
 };
 
 Zoom.prototype._update = function (translate, scale) {
-    this.d3Zoom
+    this.d3v3Zoom
         .translate(translate)
         .scale(scale);
 
@@ -119,11 +119,11 @@ Zoom.prototype._update = function (translate, scale) {
 
 Zoom.prototype._animate = function (translate, scale) {
     var _this = this,
-        d3Zoom = this.d3Zoom;
+        d3v3Zoom = this.d3v3Zoom;
 
-    d3.transition().duration(350).tween("zoom", function () {
-        var iTranslate = d3.interpolate(d3Zoom.translate(), translate),
-            iScale = d3.interpolate(d3Zoom.scale(), scale);
+    d3v3.transition().duration(350).tween("zoom", function () {
+        var iTranslate = d3v3.interpolate(d3v3Zoom.translate(), translate),
+            iScale = d3v3.interpolate(d3v3Zoom.scale(), scale);
 
         return function (t) {
             _this._update(iTranslate(t), iScale(t));
@@ -151,7 +151,7 @@ Zoom.prototype._getScalesArray = function () {
 
 Zoom.prototype._getNextScale = function (direction) {
     var scaleSet = this.scale.set,
-        currentScale = this.d3Zoom.scale(),
+        currentScale = this.d3v3Zoom.scale(),
         lastShift = scaleSet.length - 1,
         shift, temp = [];
 
@@ -230,6 +230,6 @@ function getCountry() {
 
 
 function selectedCountry() {
-    return d3.selectAll("#selectedCountry").text(getCountry())
+    return d3v3.selectAll("#selectedCountry").text(getCountry())
 }
 /* END GET CLICKED COUNTRY*/

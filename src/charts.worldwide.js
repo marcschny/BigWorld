@@ -4,19 +4,19 @@ var margin = {top: 40, right: 40, bottom: 40, left: 40},
     width = document.getElementById("scrollable").clientWidth - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
-var x = d3.scale.ordinal().rangeRoundBands([0, width], .2);
+var x = d3v3.scale.ordinal().rangeRoundBands([0, width], .2);
 
-var y = d3.scale.linear().range([height, 0]);
+var y = d3v3.scale.linear().range([height, 0]);
 
-var xAxis = d3.svg.axis()
+var xAxis = d3v3.svg.axis()
     .scale(x)
     .orient("bottom");
 
-var yAxis = d3.svg.axis()
+var yAxis = d3v3.svg.axis()
     .scale(y)
     .orient("left");
 
-var svg = d3.select("#testchart").append("svg")
+var svg = d3v3.select("#testchart").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -25,7 +25,7 @@ var svg = d3.select("#testchart").append("svg")
 
 
 /* COUNT Number of countries */
-d3.csv("./data/obese-worldwide-and-switzerland-final.csv",function(data) {
+d3v3.csv("./data/obese-worldwide-and-switzerland-final.csv",function(data) {
 
     // count distinct number of countries
     var male = [];
@@ -55,7 +55,7 @@ d3.csv("./data/obese-worldwide-and-switzerland-final.csv",function(data) {
     var dataTopThreeObese = getTopThreeObese(total);
 
     x.domain(dataTopThreeObese.map(function(d) { return d.Country+" ("+d.Year+")"; }));
-    y.domain([d3.min(dataTopThreeObese, function(d) { return d.Value-10; }), d3.max(dataTopThreeObese, function(d) { return d.Value+10; })]);
+    y.domain([d3v3.min(dataTopThreeObese, function(d) { return d.Value-10; }), d3v3.max(dataTopThreeObese, function(d) { return d.Value+10; })]);
 
     svg.append("g")
         .attr("class", "x axis")

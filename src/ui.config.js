@@ -12,23 +12,23 @@ $(".content").css("height", wHeight-scrollButtonHeight);
 
 
 /*detailed information window scrollable */
-var scrollable = d3.select("#scrollable");
+var scrollable = d3v3.select("#scrollable");
 
-d3.select("#down").on('click', function() {
+d3v3.select("#down").on('click', function() {
     var scrollheight = scrollable.property("scrollHeight");
 
-    d3.select("#scrollable").transition().duration(1000)
+    d3v3.select("#scrollable").transition().duration(1000)
         .tween("uniquetweenname", scrollTopTween(scrollheight));
 });
 
-d3.select("#up").on('click', function() {
-    d3.select("#scrollable").transition().duration(1000)
+d3v3.select("#up").on('click', function() {
+    d3v3.select("#scrollable").transition().duration(1000)
         .tween("uniquetweenname", scrollTopTween(0));
 });
 
 function scrollTopTween(scrollTop) {
     return function() {
-        var i = d3.interpolateNumber(this.scrollTop, scrollTop);
+        var i = d3v3.interpolateNumber(this.scrollTop, scrollTop);
         return function(t) { this.scrollTop = i(t); };
     };
 }
