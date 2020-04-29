@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fc3ed9d1-1f95-407c-bf36-c5aebad6eae1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testPieChart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,7 @@
       <workItem from="1587402319698" duration="5775000" />
       <workItem from="1587823426152" duration="10102000" />
       <workItem from="1588162896948" duration="7971000" />
-      <workItem from="1588176740815" duration="1489000" />
+      <workItem from="1588176740815" duration="2276000" />
     </task>
     <task id="LOCAL-00001" summary="nothing new">
       <created>1587138892196</created>
@@ -137,7 +138,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588178342162</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="multiple d3 versions usable (v3 and v5), testpiechartV5.js added">
+      <created>1588178427370</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588178427370</updated>
+    </task>
+    <task id="LOCAL-00009" summary="multiple d3 versions usable (v3 and v5), testpiechartV5.js added">
+      <created>1588178441348</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588178441348</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,10 +181,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1588178349296" />
-    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1588178427261">
+    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1588178441221">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1588178427261" />
+    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1588178441221" />
     <state x="608" y="324" width="443" height="252" key="MultipleFileMergeDialog" timestamp="1587138904967">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -178,10 +193,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1588173825961" />
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1588165369982">
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2" timestamp="1588178458084">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1588165369982" />
+    <state x="320" y="186" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1588178458084" />
     <state x="479" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1587823428740">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
