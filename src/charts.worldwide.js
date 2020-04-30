@@ -103,13 +103,25 @@ function getCountryData(country){
     var countryData = [];
 
     allData.then(function (data) {
-        data.forEach(function(d){
+
+      /*  data.forEach(function(d,i){
             //get specific country data
-            if(d.country === country && d.gender === "total" && d.value != ""
-                && (d.bmi === "overweight" || d.bmi === "obese")) {
-                countryData.push(d);
+            if(d[i].country === country && d[i].gender === "total" && d[i].value !== null
+                && (d[i].bmi === "overweight" || d[i].bmi === "obese")) {
+                countryData.push(d[i]);
             }
-        });
+        });*/
+        for (var i= 0; i<data.length; i++){
+            if (data[i].country === country && data[i].gender === "total" &&
+             (data[i].bmi === "overweight" || data[i].bmi === "obese")){
+                countryData.push(data[i])
+            }
+        }
+        for (var i=0; i<countryData.length; i++){
+                console.log(countryData[i]);
+
+        }
+
 
         //sort array desc
         countryData.sort(function(a,b){
@@ -127,6 +139,8 @@ function getCountryData(country){
 
 }
 
+
+
 function showPieChart(data){
 
     //check if country has data
@@ -141,8 +155,9 @@ function showPieChart(data){
     var rest = 100-data[0].value;
     var year = data[0].year;
 
+
     const chartDiv = document.getElementById("percOfCountry");
-    console.log(chartDiv.childNodes.length);
+    //console.log(chartDiv.childNodes.length);
 
 
 

@@ -16,10 +16,10 @@ var allData = d3.csv("data/obese-worldwide-and-switzerland-final.csv", function 
 });
 
 //zugriff auf die daten
-allData.then(function (data) {
-    //console.log(data[3433].country);
-    //getAllRows
-    //console.log(data.length)
-});
+// allData.then(function (data) {
+//     console.log(data[3433].country);
+//     //getAllRows
+//     console.log(data.length)
+// });
 
 
