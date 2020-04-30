@@ -98,7 +98,6 @@ function getTopThreeObese(data){
     return data.slice(0, 3);
 }
 
-
 function getCountryData(country){
     console.log("Country '"+ country +"' clicked");
     var countryData = [];
@@ -118,54 +117,82 @@ function getCountryData(country){
         });
         //only store value from latest year
         countryData.splice(1);
+
+        //log data of current selected country
+        console.log(countryData[0]);
+
+        //pass this data to generate a pie chart
+        showPieChart(countryData);
     });
-    //log recent data from selected country
-    console.log(countryData);
-    //pass this data to generate a pie chart
-    showPieChart(countryData);
+
 }
 
 function showPieChart(data){
 
-    /* still need the value from data to generate the pie chart */
-    console.log(data[0].value);
+    //check if country has data
+    if(!(data.length > 0)){
+        document.getElementById("percOfCountry").innerHTML = "";
+        alert("no data available");
+    }
+
+    //console.log("Value: "+data[0].value);
+    var countryData = data;
+    var pieValue = data[0].value;
+    var rest = 100-data[0].value;
+    var year = data[0].year;
 
     const chartDiv = document.getElementById("percOfCountry");
     console.log(chartDiv.childNodes.length);
 
-    /*check if there is already a chart in the div
+
+
+    //check if there is already a pie chart in the div
     if(chartDiv.childNodes.length === 0){
-        /* TEST Pie Chart /
-        var margin = {top: 40, right: 40, bottom: 40, left: 40},
-            width = document.getElementById("scrollable").clientWidth - margin.left - margin.right,
-            height = 400 - margin.top - margin.bottom,
-            radius = Math.min(width, height) / 2,
-            color = d3.scaleOrdinal(["#4daf4a"]);
+        $("#percOfCountryTitle").text("% der Bevölkerung im Jahr "+year);
+        /* TEST Pie Chart */
+        var data = [pieValue, rest];
 
-        // Generate the pie
-        var pie = d3.pie();
+        var width = 300,
+            height = 300,
+            radius = Math.min(width, height) / 2;
 
-        // Generate the arcs
-        var arc = d3.arc()
-            .innerRadius(0)
-            .outerRadius(radius);
+        var svg = d3.select('#percOfCountry').append('svg')
+            //select the svg with a class name instead of 'svg.'
+            //select the svg with an ID
+            .attr("width", 300)
+            .attr("height", 300);
 
-        //Generate groups
-        var arcs = g.selectAll("arc")
-            .data(pie(mydata))
+        var g = svg.append("g")
+            .attr("transform", "translate(" + radius + "," + radius + ")") ;
+
+        var color = d3.scaleOrdinal(["#3386ff", "#ddd"]);
+
+        var pie = d3.pie()
+            .sort(null)
+            .value(function(d) { return d });
+
+        var path = d3.arc()
+            .outerRadius(radius)
+            .innerRadius(0);
+
+        var arc = g.selectAll()
+            .data(pie(data))
             .enter()
-            .append("g")
-            .attr("class", "arc")
+            .append("g");
 
-        //Draw arc paths
-        arcs.append("path")
-            .attr("fill", function(d, i) {
-                return color(i);
-            })
-            .attr("d", arc);
+        arc.append("path")
+            .attr("d", path)
+            .attr("fill", function(d,i) { return color(d.data); });
 
+        arc.append("text")
+            .attr("text-anchor", "middle")
+            .attr("class", "chart-label")
+            .text(pieValue+"%");
 
-    }*/
+    }else{
+        document.getElementById("percOfCountry").innerHTML = "";
+        showPieChart(countryData);
+    }
 
 }
 

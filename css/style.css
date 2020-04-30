@@ -231,6 +231,11 @@ select option:hover{
     stroke: white;
     shape-rendering: crispEdges;
 }
-svg text {
+/*svg text {
     fill: white;
+}*/
+.chart-label{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
 }
