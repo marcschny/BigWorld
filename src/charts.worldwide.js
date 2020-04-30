@@ -104,13 +104,25 @@ function getCountryData(country){
     var countryData = [];
 
     allData.then(function (data) {
-        data.forEach(function(d){
+
+      /*  data.forEach(function(d,i){
             //get specific country data
-            if(d.country === country && d.gender === "total" && d.value != ""
-                && (d.bmi === "overweight" || d.bmi === "obese")) {
-                countryData.push(d);
+            if(d[i].country === country && d[i].gender === "total" && d[i].value !== null
+                && (d[i].bmi === "overweight" || d[i].bmi === "obese")) {
+                countryData.push(d[i]);
             }
-        });
+        });*/
+        for (var i= 0; i<data.length; i++){
+            if (data[i].country === country && data[i].gender === "total" &&
+             (data[i].bmi === "overweight" || data[i].bmi === "obese")){
+                countryData.push(data[i])
+            }
+        }
+        for (var i=0; i<countryData.length; i++){
+                console.log(countryData[i]);
+
+        }
+
 
         //sort array desc
         countryData.sort(function(a,b){
@@ -120,18 +132,22 @@ function getCountryData(country){
         countryData.splice(1);
     });
     //log recent data from selected country
-    console.log(countryData);
+    //console.log(countryData.length);
     //pass this data to generate a pie chart
     showPieChart(countryData);
 }
 
+
+
 function showPieChart(data){
 
     /* still need the value from data to generate the pie chart */
-    console.log(data[0].value);
+    allData.then(function (data) {
+    });
+
 
     const chartDiv = document.getElementById("percOfCountry");
-    console.log(chartDiv.childNodes.length);
+    //console.log(chartDiv.childNodes.length);
 
     /*check if there is already a chart in the div
     if(chartDiv.childNodes.length === 0){

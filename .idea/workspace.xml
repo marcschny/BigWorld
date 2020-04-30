@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fc3ed9d1-1f95-407c-bf36-c5aebad6eae1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/obese-worldwide-and-switzerland-final.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/obese-worldwide-and-switzerland-final.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/charts.worldwide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/charts.worldwide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -89,6 +90,9 @@
       <workItem from="1588162896948" duration="7971000" />
       <workItem from="1588176740815" duration="2276000" />
       <workItem from="1588188883060" duration="582000" />
+      <workItem from="1588235460649" duration="104000" />
+      <workItem from="1588254000054" duration="3465000" />
+      <workItem from="1588267476516" duration="881000" />
     </task>
     <task id="LOCAL-00001" summary="nothing new">
       <created>1587138892196</created>
@@ -202,10 +206,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="479" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824/994.-1080.1920.1040@0.0.1536.824" timestamp="1587823428740" />
-    <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588179387920">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="508" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588269267773">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="508" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1588179387920" />
+    <state x="508" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1588269267773" />
     <state x="308" y="112" key="editAsTableFormatDialogDimension" timestamp="1587139242171">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
