@@ -8,7 +8,7 @@ Student 2: David Kern
 This project shows which countries have the most overweight population in percentage terms and how many have already died attributable to it.
 
 ### Comments
-Not all dates are from the same year - please note the dates in titles and texts
+Not all data is from the same year - please note the years in titles and texts
 
 ### Technical information
 **Main file path**: index.html
