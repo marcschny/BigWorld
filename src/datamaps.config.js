@@ -224,13 +224,14 @@ const map = new Datamap();
 
 
 /*GET CLICKED COUNTRY*/
-function getCountry() {
+const getCountry = () => {
     return map.instance.options.geographyConfig.clickedCountry;
-}
+};
 
 
 function selectedCountry() {
     getCountryData(getCountry());
+    getDeathsData(getCountry());
     return d3v3.selectAll("#selectedCountry").text(getCountry())
 }
 /* END GET CLICKED COUNTRY*/

@@ -99,7 +99,7 @@ function getTopThreeObese(data){
 }
 
 function getCountryData(country){
-    console.log("Country '"+ country +"' clicked");
+    //console.log("Country '"+ country +"' clicked");
     var countryData = [];
 
     allData.then(function (data) {
@@ -112,13 +112,13 @@ function getCountryData(country){
             }
         });*/
         for (var i= 0; i<data.length; i++){
-            if (data[i].country === country && data[i].gender === "total" &&
-             (data[i].bmi === "overweight" || data[i].bmi === "obese")){
+            if (data[i].country === country && data[i].gender === "total" && data[i].value !== " " &&
+             data[i].bmi === "overweight"){
                 countryData.push(data[i])
             }
         }
         for (var i=0; i<countryData.length; i++){
-                console.log(countryData[i]);
+                //console.log(countryData[i]);
 
         }
 
