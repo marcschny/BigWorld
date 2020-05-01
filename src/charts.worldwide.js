@@ -1,133 +1,155 @@
 
-/** TESTCHART Canvas**/
-var margin = {top: 40, right: 40, bottom: 40, left: 40},
-    width = document.getElementById("scrollable").clientWidth - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
-
-var x = d3v3.scale.ordinal().rangeRoundBands([0, width], .2);
-
-var y = d3v3.scale.linear().range([height, 0]);
-
-var xAxis = d3v3.svg.axis()
-    .scale(x)
-    .orient("bottom");
-
-var yAxis = d3v3.svg.axis()
-    .scale(y)
-    .orient("left");
-
-var svg = d3v3.select("#testchart").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform",
-        "translate(" + margin.left + "," + margin.top + ")");
+//if no country selected (worldwide)
+if(getCountry() === "Worldwide") {
+    document.getElementById("percOfCountryTitle").innerHTML = "Countries with data";
+    document.getElementById("percOfDeathsTitle").innerHTML = "Top 3 overweight countries";
 
 
-/* COUNT Number of countries */
-d3v3.csv("./data/obese-worldwide-and-switzerland-final.csv",function(data) {
+    /* COUNT Number of countries */
+    allData.then(function(data){
 
-    // count distinct number of countries
-    var male = [];
-    var female = [];
-    var total = [];
-    var countries = [];
-    for(var i=0; i<data.length;i++){
-        //store all countries in array UNIQUE
-        if(countries.indexOf(data[i]["Country"]) === -1 && data[i]["Value"] != ""){
-            countries.push(data[i]["Country"]);
+        // count distinct number of countries
+        var male = [];
+        var female = [];
+        var total = [];
+        var countries = [];
+        for (var i = 0; i<data.length; i++) {
+            //store all countries in array UNIQUE
+            if (countries.indexOf(data[i].country) === -1 && data[i].value != "" && data[i].value != 0) {
+                countries.push(data[i].country);
+            }
+            //store data by gender
+            if (data[i].gender === "male") {
+                male.push(data[i]);
+            } else if (data[i].gender === "female") {
+                female.push(data[i]);
+            } else if (data[i].gender === "total" && data[i].value != "" && data[i].value != 0 && (data[i].bmi === "overweight" || data[i].bmi === "obese")) {
+                total.push(data[i]);
+            }
         }
-        //store data by gender
-        if(data[i]["Gender"] === "male"){
-            male.push(data[i]);
-        }else if(data[i]["Gender"] === "female"){
-            female.push(data[i]);
-        }else if(data[i]["Gender"] === "total"){
-            total.push(data[i]);
-        }
-    }
-    console.log("Number of countries: "+countries.length);
-    $("#countCountries").html(countries.length);
+
+        console.log("Number of countries: " + countries.length);
+
+        //display number of countries with data
+        document.getElementById("percOfCountry").innerHTML = countries.length;
 
 
+        //get top 3 obese countries
+        total.sort(function(a,b){
+            return b.value - a.value;
+        });
+        var dataTopThreeObese = total.slice(0, 3);
 
-    /** TESTCHART show top three obese countries **/
-    var dataTopThreeObese = getTopThreeObese(total);
+        console.log(dataTopThreeObese);
 
-    x.domain(dataTopThreeObese.map(function(d) { return d.Country+" ("+d.Year+")"; }));
-    y.domain([d3v3.min(dataTopThreeObese, function(d) { return d.Value-10; }), d3v3.max(dataTopThreeObese, function(d) { return d.Value+10; })]);
+        //draw bar chart
+        var margin = {top: 30, right: 30, bottom: 30, left: 40},
+            width = 340 - margin.left - margin.right,
+            height = 320 - margin.top - margin.bottom;
 
-    svg.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(xAxis)
-        .selectAll("text")
-        .style("text-anchor", "middle")
-        .attr("dy", "0.8em");
+        var greyColor = "#FFD677";
+        var barColor = "#FFD677";
+        var highlightColor = "#FFB972";
 
-    svg.append("g")
-        .attr("class", "y axis")
-        .call(yAxis.tickFormat(function(d){
-            return d+"%";
-        })
-        .ticks(5))
-        .append("text")
-        .attr("transform", "rotate(-90)")
-        .attr("dy", "-3em")
-        .style("text-anchor", "middle");
+        var formatPercent = d3.format(".0%");
 
-    svg.selectAll("bar")
-        .data(dataTopThreeObese)
-        .enter().append("rect")
-        .style("fill", "steelblue")
-        .attr("x", function(d) { return x(d.Country); })
-        .attr("width", x.rangeBand())
-        .attr("y", function(d) { return y(d.Value); })
-        .attr("height", function(d) { return height - y(d.Value); });
+        var svg = d3.select("#percOfDeaths").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var x = d3.scaleBand()
+            .range([0, width])
+            .padding(0.15);
+        var y = d3.scaleLinear()
+            .range([height, 0]);
+
+        var xAxis = d3.axisBottom(x);
+        var yAxis = d3.axisLeft(y);
+
+        x.domain(dataTopThreeObese.map( d => {
+            return d.country === "United States of America" ? "USA ("+d.year+")" : d.country+" ("+d.year+")";
+        }));
+        y.domain([d3.min(dataTopThreeObese, function(d) { return d.value-15; }), d3.max(dataTopThreeObese, function(d) { return d.value+10; })]);
+
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+        svg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis.tickFormat(function(d){
+                return d+"%";
+            }).ticks(5));
+
+        svg.selectAll(".bar")
+            .data(dataTopThreeObese)
+            .enter().append("rect")
+            .attr("class", "bar")
+            .style("display", d => { return d.value === null ? "none" : null; })
+            .style("fill",  d => {
+                return d.value === d3.max(dataTopThreeObese,  d => { return d.value; })
+                    ? highlightColor : barColor
+            })
+            .attr("x",  d => { return x(d.country === "United States of America" ? "USA ("+d.year+")" : d.country+" ("+d.year+")"); })
+            .attr("width", x.bandwidth())
+            .attr("y",  d => { return height; })
+            .attr("height", 0)
+            .transition()
+            .duration(750)
+            .delay(function (d, i) {
+                return i * 150;
+            })
+            .attr("y",  d => { return y(d.value); })
+            .attr("height",  d => { return height - y(d.value); });
+
+        svg.selectAll(".label")
+            .data(dataTopThreeObese)
+            .enter()
+            .append("text")
+            .attr("class", "label")
+            .style("display",  d => { return d.value === null ? "none" : null; })
+            .attr("x", ( d => { return x(d.country === "United States of America" ? "USA ("+d.year+")" : d.country+" ("+d.year+")") + 18 ; }))
+            .style("fill",  d => {
+                return d.value === d3.max(dataTopThreeObese,  d => { return d.value; })
+                    ? highlightColor : greyColor
+            })
+            .attr("y",  d => { return height; })
+            .attr("height", 0)
+            .transition()
+            .duration(750)
+            .delay((d, i) => { return i * 150; })
+            .text( d => { return d.value+"%"; })
+            .attr("y",  d => { return y(d.value) + .1; })
+            .attr("dy", "-.7em");
 
 
-});
-
-
-
-// get top 3 obese countries
-function getTopThreeObese(data){
-    data.sort(function(a,b){
-        return b.Value - a.Value;
     });
-    return data.slice(0, 3);
+
+
 }
+
+
+
 
 function getCountryData(country){
     //console.log("Country '"+ country +"' clicked");
     var countryData = [];
 
     allData.then(function (data) {
-
-      /*  data.forEach(function(d,i){
-            //get specific country data
-            if(d[i].country === country && d[i].gender === "total" && d[i].value !== null
-                && (d[i].bmi === "overweight" || d[i].bmi === "obese")) {
-                countryData.push(d[i]);
-            }
-        });*/
         for (var i= 0; i<data.length; i++){
             if (data[i].country === country && data[i].gender === "total" && data[i].value !== " " &&
-             data[i].bmi === "overweight"){
+                data[i].bmi === "overweight"){
                 countryData.push(data[i])
             }
         }
-        for (var i=0; i<countryData.length; i++){
-                //console.log(countryData[i]);
-
-        }
-
 
         //sort array desc
         countryData.sort(function(a,b){
             return b.year - a.year;
         });
-        //only store value from latest year
+                //only store value from latest year
         countryData.splice(1);
 
         //log data of current selected country
@@ -140,13 +162,13 @@ function getCountryData(country){
 }
 
 
-
+//generate pie chart from data
 function showPieChart(data){
 
     //check if country has data
     if(!(data.length > 0)){
-        document.getElementById("percOfCountry").innerHTML = "";
-        alert("no data available");
+        document.getElementById("percOfCountry").innerHTML = "no data available yet";
+        document.getElementById("percOfCountryTitle").innerHTML = "Overweight and obese people";
     }
 
     //console.log("Value: "+data[0].value);
@@ -163,24 +185,24 @@ function showPieChart(data){
 
     //check if there is already a pie chart in the div
     if(chartDiv.childNodes.length === 0){
-        $("#percOfCountryTitle").text("% der Bevölkerung im Jahr "+year);
+        document.getElementById("percOfCountryTitle").innerHTML = "Overweight and obese people in "+year;
         /* TEST Pie Chart */
         var data = [pieValue, rest];
 
-        var width = 300,
-            height = 300,
+        var width = 260,
+            height = 260,
             radius = Math.min(width, height) / 2;
 
         var svg = d3.select('#percOfCountry').append('svg')
             //select the svg with a class name instead of 'svg.'
             //select the svg with an ID
-            .attr("width", 300)
-            .attr("height", 300);
+            .attr("width", 260)
+            .attr("height", 260);
 
         var g = svg.append("g")
             .attr("transform", "translate(" + radius + "," + radius + ")") ;
 
-        var color = d3.scaleOrdinal(["#3386ff", "#ddd"]);
+        var color = d3.scaleOrdinal(["#FFB972", "#ddd"]);
 
         var pie = d3.pie()
             .sort(null)
@@ -210,4 +232,6 @@ function showPieChart(data){
     }
 
 }
+
+
 

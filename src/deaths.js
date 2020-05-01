@@ -28,9 +28,13 @@ function showDeathPerc(data) {
 
     const percOfDeaths = document.getElementById("percOfDeaths");
 
-    if (percOfDeaths.childNodes.length === 0) {
-        $("#percOfDeathsTitle").text("Deaths in " + year + " attributable to obesity");
+    //check if country has data
+    if(!(data.length > 0)){
+        document.getElementById("percOfDeaths").innerHTML = "no data available yet";
+        document.getElementById("percOfDeathsTitle").innerHTML = "Deaths attributable to obesity";
     }
+    document.getElementById("percOfDeathsTitle").innerHTML = "Deaths in " + year + " attributable to obesity";
+
 
     d3.select("#percOfDeaths").html(
         '<div>' +

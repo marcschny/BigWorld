@@ -201,8 +201,8 @@ function Datamap() {
             defaultFill: 'rgba(200,200,200,0.9)', // Any hex, color name or rgb/rgba value
         },
         geographyConfig: {
-            selectedFill: '#72b285',
-            highlightBorderColor: '#72b285',
+            selectedFill: '#FFB972',
+            highlightBorderColor: '#FFB972',
         },
 
         done: this._handleMapReady.bind(this)

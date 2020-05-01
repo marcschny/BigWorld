@@ -68,7 +68,9 @@ html, body {
     position: relative;
     margin-left: 26%;
 }
-
+#percOfCountry{
+    color: #FFB972;
+}
 #percOfDeaths {
     font-family: Candara;
     font-size: 50px;
@@ -109,9 +111,10 @@ html, body {
 .country-title{
     width: 100%;
     font-family: Candara;
-    font-size: 30px;
+    font-size: 34px;
     font-weight: bold;
     text-align: center;
+    letter-spacing: 1px;
     color: white;
     padding: 8px 0;
     margin-bottom: 10px;
@@ -206,7 +209,7 @@ select option:hover{
     font-size: 18px;
     font-weight: bold;
     font-family: Candara;
-    margin: 20px 0 16px 0;
+    margin: 30px 0 18px 0;
     position: relative;
 }
 
@@ -216,6 +219,7 @@ select option:hover{
     margin-bottom: 10px;
     color: white;
     text-align: center;
+    font-family: Candara;
 }
 
 .coffin {
@@ -223,8 +227,6 @@ select option:hover{
     float: left;
     margin-right: 30px;
 }
-
-
 
 .deathsText {
     font-family: Candara;
@@ -239,20 +241,7 @@ select option:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* TESTCHART */
-.bar{
-    fill: steelblue;
-}
+/* CHARTS */
 .axis {
     font: 11px sans-serif;
 }
@@ -270,4 +259,16 @@ select option:hover{
     font-size: 20px;
     font-weight: bold;
 }
-
+.axis path,
+.axis line {
+    fill: none;
+    stroke: white;
+    shape-rendering: crispEdges;
+}
+.x.axis {font-size: 12px;  }
+.y.axis {font-size: 12px; }
+.label{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
