@@ -5991,34 +5991,34 @@ deaths-by-obesity-clean.csv,United Kingdom,2014, , ,total,total, ,9.21
 deaths-by-obesity-clean.csv,United Kingdom,2015, , ,total,total, ,9.24
 deaths-by-obesity-clean.csv,United Kingdom,2016, , ,total,total, ,9.29
 deaths-by-obesity-clean.csv,United Kingdom,2017, , ,total,total, ,9.33
-deaths-by-obesity-clean.csv,United States,1990, , ,total,total, ,11.92
-deaths-by-obesity-clean.csv,United States,1991, , ,total,total, ,11.95
-deaths-by-obesity-clean.csv,United States,1992, , ,total,total, ,12.0
-deaths-by-obesity-clean.csv,United States,1993, , ,total,total, ,12.09
-deaths-by-obesity-clean.csv,United States,1994, , ,total,total, ,12.17
-deaths-by-obesity-clean.csv,United States,1995, , ,total,total, ,12.3
-deaths-by-obesity-clean.csv,United States,1996, , ,total,total, ,12.48
-deaths-by-obesity-clean.csv,United States,1997, , ,total,total, ,12.68
-deaths-by-obesity-clean.csv,United States,1998, , ,total,total, ,12.83
-deaths-by-obesity-clean.csv,United States,1999, , ,total,total, ,12.97
-deaths-by-obesity-clean.csv,United States,2000, , ,total,total, ,13.09
-deaths-by-obesity-clean.csv,United States,2001, , ,total,total, ,13.19
-deaths-by-obesity-clean.csv,United States,2002, , ,total,total, ,13.3
-deaths-by-obesity-clean.csv,United States,2003, , ,total,total, ,13.4
-deaths-by-obesity-clean.csv,United States,2004, , ,total,total, ,13.46
-deaths-by-obesity-clean.csv,United States,2005, , ,total,total, ,13.53
-deaths-by-obesity-clean.csv,United States,2006, , ,total,total, ,13.61
-deaths-by-obesity-clean.csv,United States,2007, , ,total,total, ,13.67
-deaths-by-obesity-clean.csv,United States,2008, , ,total,total, ,13.79
-deaths-by-obesity-clean.csv,United States,2009, , ,total,total, ,13.9
-deaths-by-obesity-clean.csv,United States,2010, , ,total,total, ,13.96
-deaths-by-obesity-clean.csv,United States,2011, , ,total,total, ,14.01
-deaths-by-obesity-clean.csv,United States,2012, , ,total,total, ,14.08
-deaths-by-obesity-clean.csv,United States,2013, , ,total,total, ,14.14
-deaths-by-obesity-clean.csv,United States,2014, , ,total,total, ,14.21
-deaths-by-obesity-clean.csv,United States,2015, , ,total,total, ,14.25
-deaths-by-obesity-clean.csv,United States,2016, , ,total,total, ,14.27
-deaths-by-obesity-clean.csv,United States,2017, , ,total,total, ,14.31
+deaths-by-obesity-clean.csv,United States of America,1990, , ,total,total, ,11.92
+deaths-by-obesity-clean.csv,United States of America,1991, , ,total,total, ,11.95
+deaths-by-obesity-clean.csv,United States of America,1992, , ,total,total, ,12.0
+deaths-by-obesity-clean.csv,United States of America,1993, , ,total,total, ,12.09
+deaths-by-obesity-clean.csv,United States of America,1994, , ,total,total, ,12.17
+deaths-by-obesity-clean.csv,United States of America,1995, , ,total,total, ,12.3
+deaths-by-obesity-clean.csv,United States of America,1996, , ,total,total, ,12.48
+deaths-by-obesity-clean.csv,United States of America,1997, , ,total,total, ,12.68
+deaths-by-obesity-clean.csv,United States of America,1998, , ,total,total, ,12.83
+deaths-by-obesity-clean.csv,United States of America,1999, , ,total,total, ,12.97
+deaths-by-obesity-clean.csv,United States of America,2000, , ,total,total, ,13.09
+deaths-by-obesity-clean.csv,United States of America,2001, , ,total,total, ,13.19
+deaths-by-obesity-clean.csv,United States of America,2002, , ,total,total, ,13.3
+deaths-by-obesity-clean.csv,United States of America,2003, , ,total,total, ,13.4
+deaths-by-obesity-clean.csv,United States of America,2004, , ,total,total, ,13.46
+deaths-by-obesity-clean.csv,United States of America,2005, , ,total,total, ,13.53
+deaths-by-obesity-clean.csv,United States of America,2006, , ,total,total, ,13.61
+deaths-by-obesity-clean.csv,United States of America,2007, , ,total,total, ,13.67
+deaths-by-obesity-clean.csv,United States of America,2008, , ,total,total, ,13.79
+deaths-by-obesity-clean.csv,United States of America,2009, , ,total,total, ,13.9
+deaths-by-obesity-clean.csv,United States of America,2010, , ,total,total, ,13.96
+deaths-by-obesity-clean.csv,United States of America,2011, , ,total,total, ,14.01
+deaths-by-obesity-clean.csv,United States of America,2012, , ,total,total, ,14.08
+deaths-by-obesity-clean.csv,United States of America,2013, , ,total,total, ,14.14
+deaths-by-obesity-clean.csv,United States of America,2014, , ,total,total, ,14.21
+deaths-by-obesity-clean.csv,United States of America,2015, , ,total,total, ,14.25
+deaths-by-obesity-clean.csv,United States of America,2016, , ,total,total, ,14.27
+deaths-by-obesity-clean.csv,United States of America,2017, , ,total,total, ,14.31
 deaths-by-obesity-clean.csv,Upper-middle income,1990, , ,total,total, ,5.81
 deaths-by-obesity-clean.csv,Upper-middle income,1991, , ,total,total, ,5.94
 deaths-by-obesity-clean.csv,Upper-middle income,1992, , ,total,total, ,6.18
@@ -6716,33 +6716,33 @@ eu_bmi_all-xls.csv,Serbia,2017,56.9,normal,female,total, ,
 eu_bmi_all-xls.csv,Serbia,2017,48.8,overweight,total,total, , 
 eu_bmi_all-xls.csv,Serbia,2017,58.1,overweight,male,total, , 
 eu_bmi_all-xls.csv,Serbia,2017,40.1,overweight,female,total, , 
-obesity_usa_gender_clean.csv,United States of America,2000,30.5,overweight,total,total, , 
-obesity_usa_gender_clean.csv,United States of America,2002,30.5,overweight,total,total, , 
-obesity_usa_gender_clean.csv,United States of America,2004,32.3,overweight,total,total, , 
-obesity_usa_gender_clean.csv,United States of America,2006,34.4,overweight,total,total, , 
-obesity_usa_gender_clean.csv,United States of America,2008,33.7,overweight,total,total, , 
-obesity_usa_gender_clean.csv,United States of America,2010,35.7,overweight,total,total, , 
-obesity_usa_gender_clean.csv,United States of America,2012,34.9,overweight,total,total, , 
-obesity_usa_gender_clean.csv,United States of America,2014,37.8,overweight,total,total, , 
-obesity_usa_gender_clean.csv,United States of America,2016,39.7,overweight,total,total, , 
-obesity_usa_gender_clean.csv,United States of America,2000,27.4,overweight,male,total, , 
-obesity_usa_gender_clean.csv,United States of America,2002,27.6,overweight,male,total, , 
-obesity_usa_gender_clean.csv,United States of America,2004,31.3,overweight,male,total, , 
-obesity_usa_gender_clean.csv,United States of America,2006,33.4,overweight,male,total, , 
-obesity_usa_gender_clean.csv,United States of America,2008,32.1,overweight,male,total, , 
-obesity_usa_gender_clean.csv,United States of America,2010,35.6,overweight,male,total, , 
-obesity_usa_gender_clean.csv,United States of America,2012,33.5,overweight,male,total, , 
-obesity_usa_gender_clean.csv,United States of America,2014,35.5,overweight,male,total, , 
-obesity_usa_gender_clean.csv,United States of America,2016,38.1,overweight,male,total, , 
-obesity_usa_gender_clean.csv,United States of America,2000,33.3,overweight,female,total, , 
-obesity_usa_gender_clean.csv,United States of America,2002,33.1,overweight,female,total, , 
-obesity_usa_gender_clean.csv,United States of America,2004,33.2,overweight,female,total, , 
-obesity_usa_gender_clean.csv,United States of America,2006,35.4,overweight,female,total, , 
-obesity_usa_gender_clean.csv,United States of America,2008,35.3,overweight,female,total, , 
-obesity_usa_gender_clean.csv,United States of America,2010,35.7,overweight,female,total, , 
-obesity_usa_gender_clean.csv,United States of America,2012,36.1,overweight,female,total, , 
-obesity_usa_gender_clean.csv,United States of America,2014,40.1,overweight,female,total, , 
-obesity_usa_gender_clean.csv,United States of America,2016,41.2,overweight,female,total, , 
+obesity_usa_gender_clean.csv,United States of America,2000,30.5,overweight,total,total, ,
+obesity_usa_gender_clean.csv,United States of America,2002,30.5,overweight,total,total, ,
+obesity_usa_gender_clean.csv,United States of America,2004,32.3,overweight,total,total, ,
+obesity_usa_gender_clean.csv,United States of America,2006,34.4,overweight,total,total, ,
+obesity_usa_gender_clean.csv,United States of America,2008,33.7,overweight,total,total, ,
+obesity_usa_gender_clean.csv,United States of America,2010,35.7,overweight,total,total, ,
+obesity_usa_gender_clean.csv,United States of America,2012,34.9,overweight,total,total, ,
+obesity_usa_gender_clean.csv,United States of America,2014,37.8,overweight,total,total, ,
+obesity_usa_gender_clean.csv,United States of America,2016,39.7,overweight,total,total, ,
+obesity_usa_gender_clean.csv,United States of America,2000,27.4,overweight,male,total, ,
+obesity_usa_gender_clean.csv,United States of America,2002,27.6,overweight,male,total, ,
+obesity_usa_gender_clean.csv,United States of America,2004,31.3,overweight,male,total, ,
+obesity_usa_gender_clean.csv,United States of America,2006,33.4,overweight,male,total, ,
+obesity_usa_gender_clean.csv,United States of America,2008,32.1,overweight,male,total, ,
+obesity_usa_gender_clean.csv,United States of America,2010,35.6,overweight,male,total, ,
+obesity_usa_gender_clean.csv,United States of America,2012,33.5,overweight,male,total, ,
+obesity_usa_gender_clean.csv,United States of America,2014,35.5,overweight,male,total, ,
+obesity_usa_gender_clean.csv,United States of America,2016,38.1,overweight,male,total, ,
+obesity_usa_gender_clean.csv,United States of America,2000,33.3,overweight,female,total, ,
+obesity_usa_gender_clean.csv,United States of America,2002,33.1,overweight,female,total, ,
+obesity_usa_gender_clean.csv,United States of America,2004,33.2,overweight,female,total, ,
+obesity_usa_gender_clean.csv,United States of America,2006,35.4,overweight,female,total, ,
+obesity_usa_gender_clean.csv,United States of America,2008,35.3,overweight,female,total, ,
+obesity_usa_gender_clean.csv,United States of America,2010,35.7,overweight,female,total, ,
+obesity_usa_gender_clean.csv,United States of America,2012,36.1,overweight,female,total, ,
+obesity_usa_gender_clean.csv,United States of America,2014,40.1,overweight,female,total, ,
+obesity_usa_gender_clean.csv,United States of America,2016,41.2,overweight,female,total, ,
 overweight_worldwide_measured_clean.csv,Australia,2017,65.2,overweight,total,total, , 
 overweight_worldwide_measured_clean.csv,Canada,2015,64.1,overweight,total,total, , 
 overweight_worldwide_measured_clean.csv,Canada,2017,59.1,overweight,total,total, , 
@@ -6763,7 +6763,7 @@ overweight_worldwide_measured_clean.csv,New Zealand,2018,66.8,overweight,total,t
 overweight_worldwide_measured_clean.csv,United Kingdom,2015,62.9,overweight,total,total, , 
 overweight_worldwide_measured_clean.csv,United Kingdom,2016,61.4,overweight,total,total, , 
 overweight_worldwide_measured_clean.csv,United Kingdom,2017,64.3,overweight,total,total, , 
-overweight_worldwide_measured_clean.csv,United States of America,2016,71.0,overweight,total,total, , 
+overweight_worldwide_measured_clean.csv,United States of America,2016,71.0,overweight,total,total, ,
 overweight_worldwide_measured_clean.csv,Chile,2016,74.2,overweight,total,total, , 
 overweight_worldwide_measured_clean.csv,Israel,2015,50.9,overweight,total,total, , 
 overweight_worldwide_measured_clean.csv,Turkey,2017,64.4,overweight,total,total, , 
@@ -7382,13 +7382,13 @@ switzerland_category_man_woman_clean.csv,Switzerland,1992,8.2,underweight,female
 switzerland_category_man_woman_clean.csv,Switzerland,1992,33.2,overweight,male,total, , 
 switzerland_category_man_woman_clean.csv,Switzerland,1992,59.3,normal,male,total, , 
 switzerland_category_man_woman_clean.csv,Switzerland,1992,1.5,underweight,male,total, , 
-usa_byAge_clean.csv,United States of America,1994,33.1,overweight,total,total, , 
-usa_byAge_clean.csv,United States of America,2000,34.0,overweight,total,total, , 
-usa_byAge_clean.csv,United States of America,2002,35.1,overweight,total,total, , 
-usa_byAge_clean.csv,United States of America,2004,34.1,overweight,total,total, , 
-usa_byAge_clean.csv,United States of America,2006,32.5,overweight,total,total, , 
-usa_byAge_clean.csv,United States of America,2008,34.4,overweight,total,total, , 
-usa_byAge_clean.csv,United States of America,2010,33.1,overweight,total,total, , 
-usa_byAge_clean.csv,United States of America,2012,33.7,overweight,total,total, , 
-usa_byAge_clean.csv,United States of America,2014,32.6,overweight,total,total, , 
-usa_byAge_clean.csv,United States of America,2016,31.6,overweight,total,total, , 
+usa_byAge_clean.csv,United States of America,1994,33.1,overweight,total,total, ,
+usa_byAge_clean.csv,United States of America,2000,34.0,overweight,total,total, ,
+usa_byAge_clean.csv,United States of America,2002,35.1,overweight,total,total, ,
+usa_byAge_clean.csv,United States of America,2004,34.1,overweight,total,total, ,
+usa_byAge_clean.csv,United States of America,2006,32.5,overweight,total,total, ,
+usa_byAge_clean.csv,United States of America,2008,34.4,overweight,total,total, ,
+usa_byAge_clean.csv,United States of America,2010,33.1,overweight,total,total, ,
+usa_byAge_clean.csv,United States of America,2012,33.7,overweight,total,total, ,
+usa_byAge_clean.csv,United States of America,2014,32.6,overweight,total,total, ,
+usa_byAge_clean.csv,United States of America,2016,31.6,overweight,total,total, ,
