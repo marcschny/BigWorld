@@ -6,7 +6,7 @@ function getDeathsData (country) {
     allData.then(function (data) {
 
         for (var i = 0; i < data.length; i++) {
-            if (data[i].country === country && data[i].file === "deaths-by-obesity-clean.csv") {
+            if (data[i].country === country && data[i].file === "share-of-deaths-obesity.csv") {
                 deathData.push(data[i]);
             }
         }

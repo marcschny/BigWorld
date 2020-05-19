@@ -139,8 +139,9 @@ function getCountryData(country){
 
     allData.then(function (data) {
         for (var i= 0; i<data.length; i++){
-            if (data[i].country === country && data[i].gender === "total" && data[i].value !== " " &&
-                data[i].bmi === "overweight"){
+            if (data[i].country === country && data[i].file === "share-of-adults-who-are-overweight.csv"
+                /*data[i].gender === "total" && data[i].value !== " " &&
+                data[i].bmi === "overweight"*/){
                 countryData.push(data[i])
             }
         }
