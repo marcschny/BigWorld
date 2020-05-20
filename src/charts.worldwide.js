@@ -18,12 +18,9 @@ if(getCountry() === "Worldwide") {
             if (countries.indexOf(data[i].country) === -1 && data[i].value != "" && data[i].value != 0) {
                 countries.push(data[i].country);
             }
-            //store data by gender
-            if (data[i].gender === "male") {
-                male.push(data[i]);
-            } else if (data[i].gender === "female") {
-                female.push(data[i]);
-            } else if (data[i].gender === "total" && data[i].value != "" && data[i].value != 0 && (data[i].bmi === "overweight" || data[i].bmi === "obese")) {
+
+            //store all data with non-empty values in array
+            if(data[i].file === "share-of-adults-who-are-overweight.csv" && data[i].value != "" && data[i].value != 0 && data[i].year === 2016){
                 total.push(data[i]);
             }
         }
