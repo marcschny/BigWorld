@@ -16,7 +16,7 @@
 
 
 /* load data from csv file */
-var allData = d3.csv("data/obese-worldwide-data-final.csv", function (d) {
+var allData = d3.csv("data/obese-worldwide-data-final2.csv", function (d) {
     return {
         file: d.File,
         country: d.Country,
