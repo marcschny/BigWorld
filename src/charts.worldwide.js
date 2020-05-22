@@ -3,6 +3,7 @@
 if(getCountry() === "Worldwide") {
     document.getElementById("percOfCountryTitle").innerHTML = "Countries with data";
     document.getElementById("percOfDeathsTitle").innerHTML = "Top 3 overweight countries";
+    $("#population").css("display", "none");
 
 
     /* COUNT Number of countries */
@@ -133,6 +134,14 @@ if(getCountry() === "Worldwide") {
 function getCountryData(country){
     //console.log("Country '"+ country +"' clicked");
     var countryData = [];
+
+    //get current population
+    $("#population").css("display", "block");
+    const Url = "https://restcountries.eu/rest/v2/name/"+country+"?fields=population";
+    $.getJSON(Url, function(data, status){
+        $("#population > span").text("Current population: "+data[0].population.toLocaleString().replace(/\./g,"'"));
+        console.log(data[0].population);
+    });
 
     allData.then(function (data) {
         for (var i= 0; i<data.length; i++){
