@@ -232,6 +232,7 @@ const getCountry = () => {
 function selectedCountry() {
     getCountryData(getCountry());
     getDeathsData(getCountry());
+    getBMIData(getCountry());
     return d3v3.selectAll("#selectedCountry").text(getCountry())
 }
 /* END GET CLICKED COUNTRY*/

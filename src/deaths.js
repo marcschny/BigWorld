@@ -26,8 +26,6 @@ function showDeathPerc(data) {
     var year = data[0].year;
     var deaths = data[0].deaths;
 
-    const percOfDeaths = document.getElementById("percOfDeaths");
-
     //check if country has data
     if(!(data.length > 0)){
         document.getElementById("percOfDeaths").innerHTML = "no data available yet";
