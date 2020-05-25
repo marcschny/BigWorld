@@ -200,6 +200,10 @@ function showPieChart(data){
             height = 260,
             radius = Math.min(width, height) / 2;
 
+        var textColor = "#FFFFFF";
+        var pieValueColor = "#FFB972";
+        var pieBaseColor = "#c1c2c4"
+
         var svg = d3.select('#percOfCountry').append('svg')
             //select the svg with a class name instead of 'svg.'
             //select the svg with an ID
@@ -209,7 +213,7 @@ function showPieChart(data){
         var g = svg.append("g")
             .attr("transform", "translate(" + radius + "," + radius + ")") ;
 
-        var color = d3.scaleOrdinal(["#FFB972", "#ddd"]);
+        var color = d3.scaleOrdinal([pieValueColor, pieBaseColor]);
 
         var pie = d3.pie()
             .sort(null)
@@ -226,12 +230,18 @@ function showPieChart(data){
 
         arc.append("path")
             .attr("d", path)
-            .attr("fill", function(d,i) { return color(d.data); });
+            .attr("fill", function(d,i) { return color(d.data); })
+            .transition()
+            .delay(function(d,i) {
+                return i * 150;
+            })
+            .duration(750);
 
         arc.append("text")
             .attr("text-anchor", "middle")
             .attr("class", "chart-label")
-            .text(pieValue+"%");
+            .text(pieValue+"%")
+            .style("fill", textColor);
 
     }else{
         document.getElementById("percOfCountry").innerHTML = "";

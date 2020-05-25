@@ -233,6 +233,7 @@ function selectedCountry() {
     getCountryData(getCountry());
     getDeathsData(getCountry());
     getBMIData(getCountry());
+    getCaloriesData(getCountry());
     return d3v3.selectAll("#selectedCountry").text(getCountry())
 }
 /* END GET CLICKED COUNTRY*/
