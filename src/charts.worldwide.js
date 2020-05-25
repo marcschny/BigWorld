@@ -230,12 +230,9 @@ function showPieChart(data){
 
         arc.append("path")
             .attr("d", path)
-            .attr("fill", function(d,i) { return color(d.data); })
-            .transition()
-            .delay(function(d,i) {
-                return i * 150;
-            })
-            .duration(750);
+            .attr("fill", function(d,i) { return color(d.data); });
+
+
 
         arc.append("text")
             .attr("text-anchor", "middle")

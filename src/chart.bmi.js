@@ -21,7 +21,7 @@ function getBMIData(country) {
 function showBMIChart(dataMen, dataWomen) {
     if (!(dataMen.length > 0 && dataWomen.length > 0)) {
         document.getElementById("bmiOfGender").innerHTML = "no data available yet";
-        document.getElementById("bmiOfGenderTitle").innerHTML = "Average BMI of men and women";
+        document.getElementById("bmiOfGenderTitle").innerHTML = "Average BMI of men and women in 2016";
 
     }
 
@@ -31,7 +31,7 @@ function showBMIChart(dataMen, dataWomen) {
     const chartBmi = document.getElementById("bmiOfGender");
 
     if (chartBmi.childNodes.length === 0) {
-        document.getElementById("bmiOfGenderTitle").innerHTML = "Average BMI of men and women";
+        document.getElementById("bmiOfGenderTitle").innerHTML = "Average BMI of men and women in 2016";
 
         console.log(chartBmi.childNodes.length);
 

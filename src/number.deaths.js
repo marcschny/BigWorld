@@ -10,13 +10,6 @@ function getDeathsData (country) {
                 deathData.push(data[i]);
             }
         }
-        //sort array desc
-        deathData.sort(function(a,b){
-            return b.year - a.year;
-        });
-        //only store value from latest year
-        deathData.splice(1);
-
         showDeathPerc(deathData);
 
     });
