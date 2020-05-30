@@ -6,9 +6,21 @@ var wWidth = $(window).width();
 
 var scrollButtonHeight = $(".scroll-button").height();
 
+var introBoxHeight = $("#intro-box").height();
+
+$(".row").css("height", wHeight);
 $(".column").css("height", wHeight);
 $(".content").css("height", wHeight-scrollButtonHeight);
 /* end scaling variables */
+
+$("#intro-box").css("transform", "translate(-400px, -"+introBoxHeight/2+"px)");
+
+//click to make the intro-section disappear
+$("#continue-button").click(function(){
+    $("#intro-section").delay(600).animate({height: 0}, 800);
+    $(".intro").fadeOut();
+});
+
 
 
 /*detailed information window scrollable */

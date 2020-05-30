@@ -1,9 +1,92 @@
+@font-face{
+    font-family: fatFont;
+    src: url("../lib/fonts/overmch.ttf");
+}
+
+
 html, body {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    background-color: lightslategray;
+    background-color: #628395;
+    font-family: Candara;
 }
+#intro-section{
+    width: 100%;
+    position: relative;
+    background-color: #628395;
+}
+
+#intro-box{
+    width: 800px;
+    height: auto;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #555;
+    border-radius: 22px;
+}
+
+#intro-title{
+    width: 96%;
+    height: auto;
+    position: relative;
+    font-family: fatFont;
+    font-size: 32px;
+    color: #eee;
+    text-align: center;
+    padding: 20px 2% 10px 2%;
+    letter-spacing: 2px;
+}
+
+#intro-text{
+    width: 95%;
+    height: auto;
+    position: relative;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 14px 2.5%;
+}
+
+#intro-img{
+    width: 100%;
+    position: relative;
+    height: 280px;
+    background-image: url("../img/intro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#continue-button{
+    width: 200px;
+    height: auto;
+    padding: 16px 0;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #333;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-100px, 0);
+}
+
+#continue-button:active{
+    background-color: #FFB972;
+    color: #333;
+}
+
+#main-section{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
 .zoom-button {
     width: 40px;
     height: 40px;
@@ -85,15 +168,6 @@ html, body {
     width: 27%;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.row {
-    padding: 0;
-    margin: 0;
-}
 
 #map{
     position: center;

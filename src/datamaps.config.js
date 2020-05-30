@@ -198,7 +198,7 @@ function Datamap() {
         element: document.getElementById('map'),
         projection: 'mercator',
         fills: {
-            defaultFill: 'rgba(200,200,200,0.9)', // Any hex, color name or rgb/rgba value
+            defaultFill: 'rgba(210,210,210,0.9)', // Any hex, color name or rgb/rgba value
         },
         geographyConfig: {
             selectedFill: '#FFB972',
