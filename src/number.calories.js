@@ -33,10 +33,10 @@ function showCalories(data) {
 
     d3.select("#caloriesNumber").html(
         '<div>' +
-        '   <div style="float: left; width: 60%; ">' +
+        '   <div style="float: left; width: auto; ">' +
         '       <div class="caloriesText">'+ calories + '</div>' +
         '   </div> ' +
-        '   <div style="float: right; width: 40%">' +
+        '   <div style="float: left; width: auto; margin-left: 18px; margin-top: 8px">' +
         '       <img class="calories" src="img/icons/calories.svg"> ' +
         '   </div> ' +
         '</div>')

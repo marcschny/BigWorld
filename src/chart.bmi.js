@@ -126,7 +126,7 @@ function showBMIChart(dataMen, dataWomen) {
             .duration(750)
             .attr("x", function (d) {
             return x(d.value) - 40;
-        })
+            })
 
 
 

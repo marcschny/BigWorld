@@ -19,6 +19,7 @@ $("#intro-box").css("transform", "translate(-400px, -"+introBoxHeight/2+"px)");
 $("#continue-button").click(function(){
     $("#intro-section").delay(600).animate({height: 0}, 800);
     $(".intro").fadeOut();
+    animateBars();
 });
 
 

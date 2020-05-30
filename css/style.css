@@ -11,10 +11,16 @@ html, body {
     background-color: #628395;
     font-family: Candara;
 }
+
+
+
+/******* INTRO PAGE ********/
+
 #intro-section{
     width: 100%;
     position: relative;
     background-color: #628395;
+    display: none;
 }
 
 #intro-box{
@@ -81,6 +87,10 @@ html, body {
     color: #333;
 }
 
+
+
+/******* MAIN PAGE ********/
+
 #main-section{
     margin: 0;
     padding: 0;
@@ -125,7 +135,7 @@ html, body {
     position: center;
     overflow: hidden;
 }
-/* only for testing */
+
 #scrollable .content {
     position: relative;
     width: 100%;
@@ -209,30 +219,6 @@ html, body {
     margin: auto;
 }
 
-.filter-gender-button{
-    height: 44px;
-    width: 44px;
-    background-color: #777;
-    border: none;
-    cursor: pointer;
-    margin-right: 20px;
-    border-radius: 8px;
-}
-.filter-gender-button:last-child{
-    margin: 0;
-}
-
-.filter-gender-icon{
-    width: 100%;
-}
-
-.dropdown{
-    width: 200px;
-    height: 30px;
-    font-size: 17px;
-    font-family: Candara;
-    font-weight: normal;
-}
 
 select{
     -moz-appearance: none;
@@ -292,17 +278,15 @@ select option:hover{
     font-family: Candara;
 }
 
-.coffin {
-    width: 100px;
+.death-icon {
+    width: 80px;
     float: left;
-    margin-right: 30px;
 }
 
 .deathsText {
     font-family: Candara;
     font-size: 50px;
     color: #FFB972;
-    padding-left: 80px;
     margin-top: 25px;
     float: left;
 }

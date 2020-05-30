@@ -29,11 +29,11 @@ function showDeathPerc(data) {
 
     d3.select("#percOfDeaths").html(
         '<div>' +
-        '   <div style="float: left; width: 60%; ">' +
+        '   <div style="float: left; width: auto; ">' +
         '       <div class="deathsText">'+ deaths + '%</div> ' +
         '   </div> ' +
-        '   <div style="float: right; width: 40%">' +
-        '       <img class="coffin" src="img/icons/coffin.svg"> ' +
+        '   <div style="float: left; width: auto; margin-top: 15px;">' +
+        '       <img class="death-icon" src="img/icons/coffin.svg"> ' +
         '   </div> ' +
         '</div>')
 }
