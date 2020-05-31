@@ -5,10 +5,11 @@ Student 1: Marc Schnydrig
 Student 2: David Kern
 
 **Short description**  
-This project shows which countries have the most overweight population in percentage terms and how many have already died attributable to it.
+This project serves to visualize overweight and obese people around the world.
+The data are from numerous countries and their citizens, all of whom have reached adulthood.
 
 ### Comments
-Not all data is from the same year - please note the years in titles and texts
+
 
 ### Technical information
 **Main file path**: index.html
@@ -25,4 +26,4 @@ Change to yes when your application is ready.
 |Version|Status|  
 |--|--|  
 |First prototype ready | yes |  
-|Final version ready  | no |
+|Final version ready  | yes |
