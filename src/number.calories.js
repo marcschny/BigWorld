@@ -29,8 +29,6 @@ function showCalories(data) {
     console.log(data.length);
 
 
-
-
     d3.select("#caloriesNumber").html(
         '<div>' +
         '   <div style="float: left; width: auto; ">' +

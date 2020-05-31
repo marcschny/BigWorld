@@ -21,11 +21,5 @@ var caloriesData = d3.csv("data/food-supply-kcal.csv", function (d) {
 
 });
 
-//zugriff auf die daten
-// allData.then(function (data) {
-//     console.log(data[3433].country);
-//     //getAllRows
-//     console.log(data.length)
-// });
 
 

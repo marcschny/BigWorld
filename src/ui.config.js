@@ -1,5 +1,3 @@
-
-
 /* scaling variables */
 var wHeight = $(window).height();
 var wWidth = $(window).width();
@@ -8,12 +6,14 @@ var scrollButtonHeight = $(".scroll-button").height();
 
 var introBoxHeight = $("#intro-box").height();
 
+
+/* adapt sizes and positions*/
 $(".row").css("height", wHeight);
 $(".column").css("height", wHeight);
 $(".content").css("height", wHeight-scrollButtonHeight);
-/* end scaling variables */
 
 $("#intro-box").css("transform", "translate(-400px, -"+introBoxHeight/2+"px)");
+
 
 //click to make the intro-section disappear
 $("#continue-button").click(function(){
@@ -45,4 +45,3 @@ function scrollTopTween(scrollTop) {
         return function(t) { this.scrollTop = i(t); };
     };
 }
-/*end detailed information window scrollable */
