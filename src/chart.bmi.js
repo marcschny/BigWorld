@@ -22,7 +22,6 @@ function showBMIChart(dataMen, dataWomen) {
     if (!(dataMen.length > 0 && dataWomen.length > 0)) {
         document.getElementById("bmiOfGender").innerHTML = "no data available yet";
         document.getElementById("bmiOfGenderTitle").innerHTML = "Average BMI of men and women in 2016";
-
     }
 
     console.log("Men: " + dataMen[0].bmi_men);

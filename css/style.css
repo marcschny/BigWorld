@@ -20,7 +20,6 @@ html, body {
     width: 100%;
     position: relative;
     background-color: #628395;
-    display: none;
 }
 
 #intro-box{
@@ -39,7 +38,7 @@ html, body {
     height: auto;
     position: relative;
     font-family: fatFont;
-    font-size: 32px;
+    font-size: 33px;
     color: #eee;
     text-align: center;
     padding: 20px 2% 10px 2%;
@@ -103,7 +102,6 @@ html, body {
     border-radius: 50%;
     border: none;
     background-color: #2A2A2A;
-    font-family: Candara;
     font-size: 16px;
     color: white;
     cursor: pointer;
@@ -120,7 +118,6 @@ html, body {
 #zoom-info {
     display: inline-block;
     padding: 6px;
-    font-family: Candara;
 }
 
 #btn-holder {
@@ -145,13 +142,12 @@ html, body {
 }
 .scroll-button{
     position: absolute;
-    right: 0; bottom: 0px;
+    right: 0; bottom: 0;
     border: none;
     padding: 12px 0;
     width: 100%;
     background-color: #333;
     font-size: 14px;
-    font-family: Candara;
     letter-spacing: 1px;
     color: white;
     cursor: pointer;
@@ -190,7 +186,6 @@ html, body {
 /* right column and content */
 .country-title{
     width: 100%;
-    font-family: Candara;
     font-size: 34px;
     font-weight: bold;
     text-align: center;
@@ -264,7 +259,6 @@ select option:hover{
     color: white;
     font-size: 18px;
     font-weight: bold;
-    font-family: Candara;
     margin: 30px 0 18px 0;
     position: relative;
 }
@@ -272,10 +266,9 @@ select option:hover{
 .statistic-section{
     width: 100%;
     min-height: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: white;
     text-align: center;
-    font-family: Candara;
 }
 
 .death-icon {
@@ -284,7 +277,6 @@ select option:hover{
 }
 
 .deathsText {
-    font-family: Candara;
     font-size: 50px;
     color: #FFB972;
     margin-top: 25px;
@@ -298,7 +290,6 @@ select option:hover{
 }
 
 .caloriesText {
-    font-family: Candara;
     font-size: 50px;
     color: #FFB972;
     padding-left: 100px;
@@ -314,7 +305,6 @@ select option:hover{
     width: 90%;
     padding: 10px 5%;
     text-align: center;
-    font-family: Candara;
     font-size: 17px;
     margin-bottom: 30px;
     color: #eee;
@@ -329,7 +319,7 @@ select option:hover{
 
 
 
-/* CHARTS */
+/* CHARTS in general */
 .axis {
     font: 11px sans-serif;
 }
@@ -339,9 +329,6 @@ select option:hover{
     stroke: white;
     shape-rendering: crispEdges;
 }
-/*svg text {
-    fill: white;
-}*/
 .chart-label{
     color: black;
     font-size: 20px;
