@@ -19,7 +19,7 @@ The data are from numerous countries and their citizens, all of whom have reache
 **Supported Browsers**: Firefox, Chrome
 
 **Used frameworks**:
-D3, TopoJSON, Datamaps
+D3, TopoJSON, Datamaps, REST countries (API)
 
 ### Status
 Change to yes when your application is ready.  
