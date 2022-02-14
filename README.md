@@ -1,6 +1,5 @@
 # Living in a big world
 
-
 Student 1: Marc Schnydrig  
 Student 2: David Kern
 
@@ -8,7 +7,11 @@ Student 2: David Kern
 This project serves to visualize overweight and obese people around the world.
 The data are from numerous countries and their citizens, all of whom have reached adulthood.
 
-### Comments
+### Screenshots
+<img src="https://github.com/marcschny/BigWorld/tree/master/img/bigworld1.png" width="280" align="left"/>
+<img src="https://github.com/marcschny/BigWorld/tree/master/img/bigworld2.png" width="280" align="left"/>
+<img src="https://github.com/marcschny/BigWorld/tree/master/img/bigworld3.png" width="280" align="left"/>
+<img src="https://github.com/marcschny/BigWorld/tree/master/img/bigworld4.png" width="280" align="left"/>
 
 
 ### Technical information

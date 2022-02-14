@@ -132,15 +132,16 @@ if(getCountry() === "Worldwide") {
 
 
 function getCountryData(country){
-    //console.log("Country '"+ country +"' clicked");
+    console.log("Country '"+ country +"' clicked");
     var countryData = [];
 
     //get current population
     $("#population").css("display", "block");
-    const Url = "https://restcountries.eu/rest/v2/name/"+country+"?fields=population";
+    const Url = "https://restcountries.com/v3.1/name/"+country+"?fields=population";
     $.getJSON(Url, function(data, status){
         $("#population > span").text("Current population: "+data[0].population.toLocaleString().replace(/\./g,"'"));
-        console.log(data[0].population);
+        console.log("data[0].population: "+data[0].population);
+        console.log("data:" +data);
     });
 
     allData.then(function (data) {
