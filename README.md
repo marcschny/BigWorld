@@ -8,13 +8,14 @@ This project serves to visualize overweight and obese people around the world.
 The data are from numerous countries and their citizens, all of whom have reached adulthood.
 
 ### Screenshots
-<img src="https://github.com/marcschny/BigWorld/blob/master/img/bigworld1.png" width="280" align="left"/>
-<img src="https://github.com/marcschny/BigWorld/blob/master/img/bigworld2.png" width="280" align="left"/>
-<img src="https://github.com/marcschny/BigWorld/blob/master/img/bigworld3.png" width="280" align="left"/>
-<img src="https://github.com/marcschny/BigWorld/blob/master/img/bigworld4.png" width="280" align="left"/>
+<img src="https://github.com/marcschny/BigWorld/blob/master/img/bigworld1.png" width="320" align="left"/>
+<img src="https://github.com/marcschny/BigWorld/blob/master/img/bigworld2.png" width="320" align="left"/>
+<img src="https://github.com/marcschny/BigWorld/blob/master/img/bigworld3.png" width="320" align="left"/>
+<img src="https://github.com/marcschny/BigWorld/blob/master/img/bigworld4.png" width="320" align="left"/>
 
 
-</br></br></br></br>
+</br></br></br></br></br>
+</br></br></br></br></br>
 ### Technical information
 **Main file path**: index.html
 
